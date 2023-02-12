@@ -143,6 +143,20 @@ span {
   padding-right: 8px;
 }
 
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 14px;
+  color: yellow;
+  font-weight: 700;
+}
+
+footer a {
+  color: red;
+  text-decoration: none;
+}
+
 @media (max-width: 500px) and (orientation: portrait) {
   main {
     flex-direction: column;
