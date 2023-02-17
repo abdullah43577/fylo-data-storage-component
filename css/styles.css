@@ -131,6 +131,20 @@ span {
   top: 0;
 }
 
+.data--counter--container::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 20px solid white;
+  border-bottom: 20px solid white;
+  border-right: 20px solid transparent;
+  transform: rotate(45deg) translateX(-5px) translateY(-5px);
+}
+
 .data-storage {
   display: flex;
   justify-content: center;
@@ -172,5 +186,12 @@ footer a {
   .data--counter--container {
     bottom: 0;
     top: unset;
+  }
+
+  .data--counter--container::before {
+    border-top: 0px solid transparent;
+    border-left: 0px solid white;
+    border-bottom: 0px solid white;
+    border-right: 0px solid transparent;
   }
 }
